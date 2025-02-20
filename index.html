@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duke Financial</title>
+    <link rel="shortcut icon" type="image/png" href="./images/abaicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
     <div class="hero_header">
         <header>
             <div class="logo">
-                <img src="images/logo2.png" alt="">
+                <a href="#home"><img src="images/logo2.png" alt="duke logo" ></a>
+                
             </div>
             <ul class="menu" id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Junte-se a nós</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#junte">Junte-se a nós</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
             <div>
-                <button class="btn">WhatsApp: 89238 938 329</button>
+                <a href="https://wa.me/message/QCZIW7DSPHT5P1" target="_blank"><button class="btn">WhatsApp: +1 (650) 307-4670</button></a>
+                
             </div>
             
             <i class="fa-solid fa-bars bars" id="bars"></i>
@@ -45,10 +49,9 @@
                     </div>
                 </div>
                 <div class="hero_btns">
-                    <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="animBtn">
-                        Junte-se a nós <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <a href="#sobre"><button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button></a>
+                    <button class="animBtn" onclick="window.location.href='#junte'">Junte-se a nós<i class="fa-solid fa-arrow-right"></i></button>
+                    
                 </div>
             </div>
             <div class="hero_image">
@@ -155,7 +158,7 @@
     
 
     <!-- Letreiro 2 -->
-     <marquee behavior="scroll" direction="right" class="marquee2" scrollamount="13">
+    <marquee behavior="scroll" direction="right" class="marquee2" scrollamount="13">
         <div class="dev2">
             <h1>              </h1>
             <h1 class="marquee_color_text">Venha planejar a sua vida</h1>
@@ -164,8 +167,21 @@
             <h1>               -                  </h1>
             <h1 class="marquee_color_text">Não perca tempo!</h1>
         </div>
-     </marquee>
+    </marquee>
 
+     <!-- Lead -->
+    
+     <div class="bg" id="junte">
+        <div class="section lead_section">
+            <div class="lead_content">
+                <h3>Junte-se a nós</h3>
+                <h2>Queremos saber mais sobre você</h2>
+                <p>Conte-me sobre as suas dúdivas, experiências e outros relatos sobre o mundo das finanças que você queira compartilhar.</p>
+            </div>
+            
+            
+        </div>
+     </div>
 
     
 

@@ -53,6 +53,8 @@ button {
     padding-top: 7%;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -206,6 +208,12 @@ ul li a{
     font-weight: 600;
     transition: .3s;
 }
+
+
+.hero_btns button:nth-child(1):hover {
+    color: #000;
+}
+
 
 .hero_btns button i {
     transition: .3s;
@@ -570,3 +578,40 @@ ul li a{
 .time_set i {
     font-size: 50px;
 }
+
+/* Leads  */
+
+.lead_section {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 8%;
+    height: 100vh;
+    color: #fff;
+}
+
+.bg {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--body-color);
+    width: 100%;
+    padding-top: 7%;
+}
+
+.lead_content {
+    width: 70%;
+}
+
+
+.lead_content h2 {
+    font-size: 63px;
+    margin: 20px 0;
+}
+
+.lead_content p {
+    text-align: center;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0;
+} 
