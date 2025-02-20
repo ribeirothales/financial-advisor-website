@@ -13,7 +13,7 @@
     <div class="hero_header">
         <header>
             <div class="logo">
-                <a href="#home"><img src="images/logo2.png" alt="duke logo" ></a>
+                <a href="#home"><img src="images/logo.png" alt="dukelogo" ></a>
                 
             </div>
             <ul class="menu" id="menu">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="hero_btns">
                     <a href="#sobre"><button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button></a>
-                    <button class="animBtn" onclick="window.location.href='#junte'">Junte-se a nós<i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="animBtn" onclick="window.location.href='#junte'">Junte-se a nós <i class="fa-solid fa-arrow-right"></i></button>
                     
                 </div>
             </div>
@@ -70,7 +70,8 @@
           <div class="dev">
             <h1>CONSULTOR FINANCEIRO</h1>
             <h1 class="marquee_color">LIFE PLANNING</h1>
-            <h1>SEGUROS E APOSENTADORIA</h1>
+            <h1>SEGUROS</h1>
+            <h1 class="marquee_color">APOSENTADORIA</h1>
             
           </div>  
         </marquee>
@@ -122,7 +123,7 @@
     <!-- Seção Serviços -->
     <div id="servicos">
         <h1 class="title2">Serviços</h1>
-        <div class="section">
+        <div class="section_card">
             <div class="cards">
                 <!-- Card 1 -->
                 <div class="card">
@@ -130,7 +131,7 @@
                         <i class="fa-solid fa-comments-dollar"></i>
                         <h1>CONSULTOR FINANCEIRO</h1>
                         <p>Oferecemos um serviço personalizado de consultoria financeira para ajudá-lo a gerenciar melhor seu dinheiro, criar estratégias de investimento e alcançar seus objetivos financeiros com segurança e eficiência.</p>
-                        <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button>
+                        <!-- <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button> -->
                     </div>
                 </div>  
                 <!-- Card 2 -->
@@ -139,16 +140,16 @@
                         <i class="fa-solid fa-infinity"></i>
                         <h1>LIFE PLANNING</h1>
                         <p>Nosso serviço de Life Planning vai além das finanças: ajudamos você a estruturar um plano de vida alinhado com seus valores, aspirações e metas de longo prazo, garantindo equilíbrio entre segurança financeira e qualidade de vida.</p>
-                        <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button>
+                        <!-- <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button> -->
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="cardicon">
                         <i class="fa-solid fa-house-chimney-medical"></i>
-                        <h1>SEGURO E APOSENTADORIA</h1>
+                        <h1>SEGUROS E APOSENTADORIA</h1>
                         <p>Proteja seu futuro e o de sua família com um planejamento completo de seguros e aposentadoria. Analisamos suas necessidades e criamos soluções que garantem tranquilidade e estabilidade financeira para todas as fases da vida.</p>
-                        <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button>
+                        <!-- <button>Leia Mais <i class="fa-solid fa-arrow-right"></i></button> -->
                     </div>
                 </div> 
             </div>
@@ -160,11 +161,14 @@
     <!-- Letreiro 2 -->
     <marquee behavior="scroll" direction="right" class="marquee2" scrollamount="13">
         <div class="dev2">
-            <h1>              </h1>
             <h1 class="marquee_color_text">Venha planejar a sua vida</h1>
-            <h1>               -                  </h1>
+            <p>                                </p>
+            <p>                                </p>                  
+            <p>                                </p>
             <h1>Nunca é tarde para investir</h1>
-            <h1>               -                  </h1>
+            <p>                                </p>
+            <p>                                </p>                  
+            <p>                                </p>
             <h1 class="marquee_color_text">Não perca tempo!</h1>
         </div>
     </marquee>
@@ -177,23 +181,104 @@
                 <h3>Junte-se a nós</h3>
                 <h2>Queremos saber mais sobre você</h2>
                 <p>Conte-me sobre as suas dúdivas, experiências e outros relatos sobre o mundo das finanças que você queira compartilhar.</p>
+                <img src="/images/money-asset.png" alt="" class="money_asset">
             </div>
             
+            <div class="contact-form" id="contact_details">
+                <form id="leadForm" action="https://formspree.io/f/mrbejpny" method="POST">
+                    <fieldset class="form-grid">
+                        <div class="form-group">
+                            <label for="first-name">Nome</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Nº de telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" cols="10" rows="9" placeholder="Digite aqui sua mensagem..." required></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
             
+            <!-- Toast Notification -->
+            <div id="toast" class="toast">✅ Mensagem enviada com sucesso!</div>    
         </div>
      </div>
 
-    
+    <!-- Seção Contato  -->
+
+    <div class="section ct_footer" id="contato">
+        <div class="main_footer">
+            <div class="footer_content">
+                <img src="images/logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div class="footer_icons">
+                    <i class="fa-brands fa-facebook-f FFicon"></i>
+                    <i class="fa-brands fa-instagram FFicon"></i>
+                    <i class="fa-brands fa-twitter FFicon"></i>
+                    <i class="fa-brands fa-pinterest-p FFicon"></i>
+
+                </div>
+            </div>
+            <div class="footer_content">
+                <h1>Mapa do site</h1>
+                <div class="F-cata">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#home">Home</a>
+                </div>
+                <div class="F-cata">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#sobre">Sobre</a>
+                </div>
+                <div class="F-cata">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#servicos">Serviços</a>
+                </div>
+                <div class="F-cata">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#junte">Junte-se a nós</a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <h1>Endereço</h1>
+                <div class="F-cata F_cata_second">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1 (640) 650 307-4670</p>
+                </div>
+                <div class="F-cata F_cata_second">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>dukefinancial.gustavo@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer_content">
+              <h1>Get Free Estimate</h1>  
+              <div class="footer_inputs">
+                <input type="email" placeholder="Digite seu e-mail">
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+            </div>
+        </div>
+    </div>
+         
 
 
 
 
 
-
-
-
-
-
+    <footer id="footer" class="white-bg">
+        <p><a href="https://www.linkedin.com/in/ribeirothales/" target="_blank">Feito por Thales Oliveira Ribeiro</a></p>
+    </footer>
+    <a class="back-to-top" href="#">✦</a>
     <script src="script.js"></script>
 </body>
 </html>
