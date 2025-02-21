@@ -1,4 +1,4 @@
-document.getElementById("leadForm").addEventListener("submit", async function(event) {
+document.getElementById("leadForm").addEventListener("submit", async function (event) {
     event.preventDefault(); // Impede o redirecionamento padrão
 
     const form = event.target;
@@ -24,6 +24,33 @@ document.getElementById("leadForm").addEventListener("submit", async function(ev
     }
 });
 
+document.getElementById("emailForm").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Impede o redirecionamento padrão
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            showToast("✅ Mensagem enviada com sucesso!"); // Exibe o toast
+            form.reset(); // Reseta o formulário
+        } else {
+            showToast("❌ Ocorreu um erro. Tente novamente!", true);
+        }
+    } catch (error) {
+        showToast("❌ Erro ao enviar. Verifique sua conexão.", true);
+    }
+});
+
+
 function showToast(message, isError = false) {
     const toast = document.getElementById("toast");
     toast.textContent = message;
@@ -38,6 +65,6 @@ function showToast(message, isError = false) {
 let bars = document.querySelector("#bars");
 let menu = document.querySelector("#menu");
 
-bars.addEventListener("click", () =>{
+bars.addEventListener("click", () => {
     menu.classList.toggle("show_menu");
 });
