@@ -10,6 +10,7 @@ Esta landing page foi desenvolvida para apresentar os serviços de consultoria f
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+- **UI/UX**
 
 ## Funcionalidades
 - Apresentação dos serviços de consultoria financeira
