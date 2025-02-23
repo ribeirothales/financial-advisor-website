@@ -317,7 +317,7 @@ ul li a {
     transform: translate(10px);
 }
 
-.hero_image, {
+.hero_image {
     position: sticky;
     top: 41%;
     left: 45%;
@@ -1092,6 +1092,11 @@ p {
     }
 }
 
+@media (max-width: 1224px) {
+    .about_content {
+        padding-left: 0;
+    }
+}
 
 @media (max-width: 1150px) {
     #bars {
@@ -1384,6 +1389,21 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .hero_image {
+        padding: 0;
+    }
+
+    .marquee {
+        padding: 0px;
+        width: 100%;
+        position:relative;
+        margin-top: 0; 
+    
+    }
+
+    .hero_section {
+        padding-bottom: 0;
+    }
 
     .footer_content {
         justify-content: center;
@@ -1555,8 +1575,7 @@ p {
         padding-top: 50px;
         width: 1%;
         padding-left: 169px;
-    
-      
+
     }
     
     
