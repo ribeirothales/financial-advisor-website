@@ -1090,12 +1090,23 @@ p {
     .about_img1{
         padding-right: 40px;
     }
+    .header_menu ul li a {
+        
+        padding: 0px;
+        gap: 2px;
+
+      
+      
+        
+    }
 }
 
 @media (max-width: 1224px) {
     .about_content {
         padding-left: 0;
     }
+
+    
 }
 
 @media (max-width: 1150px) {
@@ -1275,6 +1286,19 @@ p {
         align-items: center;
         display: flex;
     }
+
+    .marquee {
+        padding: 0px;
+        width: 100%;
+        position:relative;
+        margin-top: 0; 
+    
+    }
+
+    .hero_section {
+        padding-bottom: 0;
+    }
+    
     
    
 }
