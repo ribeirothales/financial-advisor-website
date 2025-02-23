@@ -115,6 +115,30 @@ ul li a {
     font-weight: 500;
 }
 
+.header_menu ul li a {
+   
+    padding: 1.5rem;
+    
+    position: relative;
+}
+
+.header_menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.1rem;
+    background: var(--prime-color);
+    transition: all 300ms ease-in-out;
+}
+.header_menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+
+
 .btn {
     position: relative;
     padding: 15px 30px;
@@ -184,7 +208,7 @@ ul li a {
 .hero_social_icons {
     justify-content: center;
     display: flex;
-    gap: 120px;
+    gap: 80px;
     margin: 30px 0;
 }
 
@@ -547,13 +571,14 @@ p {
 
 .about_content {
     width: 100%;
-    padding: 5% 8%;
+    padding: 46px 0px 46px 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     color: var(--body-color);
     margin-top: 50px;
+    max-width: 100%;
 }
 
 .about_head {
@@ -586,6 +611,7 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    max-width: 100%;
 }
 
 .time_set {
@@ -593,12 +619,15 @@ p {
     justify-content: center;
     align-items: center;
     margin: 20px;
+    padding-left: 30px;
 }
 
-.time_set h1 {
-    font-size: 20px;
+.time_set p {
+    /* font-size: 20px; */
     font-weight: 500;
     margin: 0 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .time_set i {
@@ -1049,6 +1078,18 @@ p {
     .hero_btns {
         padding-bottom: 20px;
     }
+    .time_set h1 {
+        font-size: 8px;
+    }
+
+    .about_content {
+        padding: 46px 10px 46px 30px;
+        padding-right: 0px;
+        max-width: 100%;
+    }
+    .about_img1{
+        padding-right: 40px;
+    }
 }
 
 
@@ -1057,6 +1098,7 @@ p {
         display: block;
         cursor: pointer;
     }
+
 
     header {
         z-index: 999;
@@ -1076,6 +1118,10 @@ p {
         backdrop-filter: blur(10px) !important;
         opacity: 0;
         transition: .3s;
+    }
+
+    .about_content {
+        
     }
 
     ul li {
@@ -1106,6 +1152,11 @@ p {
         white-space: nowrap; /* Mantém o texto em uma linha */
     }
 
+    .title2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 1100px) {
@@ -1117,6 +1168,14 @@ p {
         position: relative;
         min-height: auto; /* Remove altura fixa */
         overflow: visible; /* Permite que os elementos filhos se expandam */
+    }
+
+    .about_projects {
+        display: none;
+    }
+
+    .drawn_img {
+        display: none;
     }
 
     .hero_image {
@@ -1160,8 +1219,18 @@ p {
     }
 
     .main_footer {
-        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+       
     }
+
+   #footer_third {
+    padding-left: 120px;
+   }
+
+   .footer_forth {
+    padding-left: 80px;
+   }
 
     .marquee {
         width: 100%;
@@ -1169,6 +1238,40 @@ p {
         margin-top: 20px; 
         white-space: nowrap; /* Mantém o texto em uma linha */
     }
+
+    .about_content {
+        padding: 0;
+        justify-content: center;
+        
+    }
+
+    .about_img1 {
+        display: none;
+    }
+
+    .about_img2{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       
+        max-width: 100%;
+    }
+
+    .about_img2 img {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+         margin-left: 300px;
+    }
+
+    .about_image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+   
 }
 
 @media (max-width: 1000px) {
@@ -1214,6 +1317,21 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .lead_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        padding-bottom: 80px;
+        position: relative;
+        min-height: auto; /* Remove altura fixa */
+        overflow: visible; /* Permite que os elementos filhos se expandam */
+    }
+
+    .lead_content img {
+        padding: 0;
+        padding-bottom: 7px;
+    }
+
     .hero_image {
         width: 70%;
     }
@@ -1226,6 +1344,7 @@ p {
 
     .about_time {
         flex-direction: column;
+        padding-left: 75px;
     }
 
     .about {
@@ -1237,13 +1356,34 @@ p {
         justify-content: center;
         align-items: center;
     }
-    
+
+    .title2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+
+    #footer_first {
+        padding-left: 0px;
+    }
+
+    #footer_second {
+        padding-left: 0px;
+    }
+
+    #footer_third {
+        padding: 0px;
+    }
+    .footer_forth {
+        padding: 0px;
+    }
 }
 
 @media (max-width: 768px) {
     .skills_card {
         grid-template-columns: repeat(1, 1fr);
     }
+
 
     .footer_content {
         justify-content: center;
@@ -1314,10 +1454,7 @@ p {
         text-align: center;
     }
 
-    .about_image {
-        width: 60%;
-    }
-
+  
     .skills_header {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1362,6 +1499,13 @@ p {
         padding-left: 0px;
     }
 
+    #footer_third {
+        padding: 0px;
+    }
+    .footer_forth {
+        padding: 0px;
+    }
+
     .lead_content h2 {
         font-size: 20px;
     }
@@ -1377,6 +1521,44 @@ p {
     .wpp_button a {
         display: none;
     }
+
+    .about_time {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    
+    
+}
+
+@media (max-width: 360px) {
+    #footer_first {
+        padding-left: 0px;
+    }
+
+    #footer_second {
+        padding-left: 0px;
+    }
+
+    #footer_third {
+        padding: 0px;
+    }
+    .footer_forth {
+        padding: 0px;
+    }
+     *{
+        
+     }
+}
+
+@media (max-width: 348px) {
+    .section_card {
+        padding-top: 50px;
+        width: 1%;
+        padding-left: 169px;
+    
+      
+    }
+    
     
 }
 
