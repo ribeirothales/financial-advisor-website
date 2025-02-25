@@ -64,7 +64,14 @@ function showToast(message, isError = false) {
 
 let bars = document.querySelector("#bars");
 let menu = document.querySelector("#menu");
+let menuItems = document.querySelectorAll("#menu a");
 
 bars.addEventListener("click", () => {
     menu.classList.toggle("show_menu");
+});
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        menu.classList.remove("show_menu");
+    });
 });

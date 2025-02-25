@@ -125,7 +125,7 @@ ul li a {
 .header_menu li a::after {
     content: '';
     position: absolute;
-    bottom: 1rem;
+    bottom: 16px;
     left: 50%;
     width: 0;
     height: 0.1rem;
@@ -428,6 +428,10 @@ p {
     border-radius: 20px;
     background-color: var(--prime-color);
     z-index: -1;
+}
+
+.cardicon p {
+    text-align: justify;
 }
 
 .card h1 {
@@ -1409,6 +1413,10 @@ p {
 }
 
 @media (max-width: 768px) {
+
+    .time_set {
+        padding-left: 5px;
+    }
     .skills_card {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1510,6 +1518,10 @@ p {
     .get_contact button {
         width: 300px;
         margin: 20px 0;
+    }
+
+    .lead_content p {
+        text-align: justify;
     }
 
     .skill_card {
