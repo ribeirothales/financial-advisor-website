@@ -4,7 +4,7 @@ Esta landing page foi desenvolvida para apresentar os serviços de consultoria f
 
 - Acesse agora:https://dukefinancial.netlify.app/
 
-![Texto Alternativo](https://i.imgur.com/iMAIOPC.png)
+![Texto Alternativo](https://i.imgur.com/1o0j4jD.png)
 
 ## Tecnologias Utilizadas
 - **HTML5**
